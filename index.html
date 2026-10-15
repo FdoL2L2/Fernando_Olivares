@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio profesional de Fernando Olivares Cerda, Ingeniero en Informática especializado en automatización, Python, SQL, IA y operaciones TI." />
+  <title>Fernando Olivares Cerda | Portafolio</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --card:#111a2b;
+      --text:#eef3f8;
+      --muted:#aeb8c7;
+      --accent:#66d9c3;
+      --line:#22304a;
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Calibri, Arial, sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    header{
+      position:sticky;top:0;z-index:20;
+      backdrop-filter:blur(12px);
+      background:rgba(11,18,32,.86);
+      border-bottom:1px solid var(--line);
+    }
+    nav{display:flex;justify-content:space-between;align-items:center;min-height:64px;gap:20px}
+    .brand{font-weight:700;letter-spacing:.3px}
+    .navlinks{display:flex;gap:18px;flex-wrap:wrap}
+    .navlinks a{text-decoration:none;color:var(--muted);font-size:.95rem}
+    .navlinks a:hover{color:var(--text)}
+    .hero{padding:88px 0 64px}
+    .eyebrow{color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:1.4px;font-size:.82rem}
+    h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;margin:.3rem 0 1rem}
+    .lead{font-size:1.18rem;color:var(--muted);max-width:780px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{
+      display:inline-block;padding:11px 16px;border-radius:10px;
+      text-decoration:none;font-weight:700;border:1px solid var(--line)
+    }
+    .btn.primary{background:var(--accent);color:#08111c;border-color:var(--accent)}
+    .btn.secondary{color:var(--text)}
+    section{padding:32px 0 54px}
+    h2{font-size:1.8rem;margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:16px;
+      padding:20px
+    }
+    .card h3{margin:0 0 8px;font-size:1.16rem}
+    .card p{margin:.35rem 0;color:var(--muted)}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+    .tag{
+      font-size:.82rem;padding:5px 9px;border-radius:999px;
+      border:1px solid var(--line);color:#dbe5f0
+    }
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skills span{
+      background:var(--card);border:1px solid var(--line);padding:9px 12px;border-radius:10px
+    }
+    .timeline{display:grid;gap:14px}
+    .item{
+      display:grid;grid-template-columns:180px 1fr;gap:20px;
+      padding:16px 0;border-bottom:1px solid var(--line)
+    }
+    .item:last-child{border-bottom:none}
+    .when{color:var(--accent);font-weight:700}
+    .item h3{margin:0 0 6px}
+    .item p{margin:0;color:var(--muted)}
+    footer{
+      border-top:1px solid var(--line);padding:30px 0 46px;color:var(--muted)
+    }
+    @media(max-width:760px){
+      .grid{grid-template-columns:1fr}
+      .item{grid-template-columns:1fr;gap:4px}
+      .navlinks{display:none}
+      .hero{padding-top:62px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">Fernando Olivares Cerda</div>
+      <div class="navlinks">
+        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Ingeniero en Informática</div>
+      <h1>Automatización, datos e inteligencia artificial aplicada.</h1>
+      <p class="lead">
+        Profesional TI con experiencia en soporte, operaciones tecnológicas, automatización de procesos,
+        gestión de información y mejora continua. Interés en desarrollar soluciones con Python, SQL,
+        Power Automate, cloud e inteligencia artificial que reduzcan tareas manuales y mejoren la operación.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn secondary" href="https://github.com/fdol212" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn secondary" href="mailto:fernandoolivares48@gmail.com">Contacto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="perfil">
+    <div class="wrap">
+      <h2>Perfil</h2>
+      <div class="card">
+        <p>
+          Ingeniero en Informática con experiencia en entornos corporativos y operacionales, orientado a la
+          resolución de incidentes, automatización de tareas, documentación de procesos y continuidad operacional.
+          Ha trabajado con herramientas como Power Automate, AppSheet, SQL, Python, Active Directory y servicios cloud.
+        </p>
+        <p>
+          Actualmente continúa profundizando sus conocimientos en inteligencia artificial, automatización y bots,
+          con especial interés en soluciones escalables, integración de datos y mejora de procesos mediante tecnología.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="wrap">
+      <h2>Proyectos técnicos destacados</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Reconocimiento de objetos con Python</h3>
+          <p>
+            Desarrollo de una solución para detectar y contabilizar personas, vehículos y otros elementos
+            en imágenes, transformando los resultados en información estructurada para análisis y reportería.
+          </p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Visión computacional</span><span class="tag">Datos</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Automatización de tickets</h3>
+          <p>
+            Automatización de tareas repetitivas mediante Power Automate y Excel para apoyar la creación masiva
+            de tickets, reducir trabajo manual y estandarizar el ingreso de información.
+          </p>
+          <div class="tags">
+            <span class="tag">Power Automate</span><span class="tag">Excel</span><span class="tag">Automatización</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Aplicación operativa con AppSheet</h3>
+          <p>
+            Desarrollo de una solución en AppSheet integrada con Excel para registrar y georreferenciar
+            puestos operacionales, centralizar formularios y generar reportes automáticos por correo.
+          </p>
+          <div class="tags">
+            <span class="tag">AppSheet</span><span class="tag">Excel</span><span class="tag">Georreferenciación</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Estandarización de equipos con Sysprep</h3>
+          <p>
+            Participación en la preparación y despliegue de equipos corporativos mediante imágenes estandarizadas
+            de Windows y Sysprep, apoyando una configuración más consistente y eficiente.
+          </p>
+          <div class="tags">
+            <span class="tag">Windows</span><span class="tag">Sysprep</span><span class="tag">IT Operations</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="habilidades">
+    <div class="wrap">
+      <h2>Habilidades</h2>
+      <div class="skills">
+        <span>Python</span><span>SQL</span><span>Power Automate</span><span>Power BI</span>
+        <span>AppSheet</span><span>Excel</span><span>MySQL</span><span>SQL Server</span>
+        <span>AWS</span><span>Oracle Cloud Infrastructure</span><span>Git / GitHub</span>
+        <span>Windows Server</span><span>Linux</span><span>Active Directory</span>
+        <span>ServiceNow</span><span>Scrum</span><span>Kanban</span><span>Lean</span><span>Six Sigma</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia">
+    <div class="wrap">
+      <h2>Experiencia</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="when">2023 — Actualidad</div>
+          <div>
+            <h3>Especialista de Soporte TI · CONYTEC Consultores SpA (ESVAL S.A.)</h3>
+            <p>Soporte corporativo, gestión de incidentes, automatización, Active Directory, activos TI, documentación y continuidad operacional.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2023</div>
+          <div>
+            <h3>Especialista de Soporte TI · Servintegral Ltda.</h3>
+            <p>Soporte en terreno, control de inventario, entrega de equipos y reportería operativa.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2021 — 2023</div>
+          <div>
+            <h3>Técnico de Infraestructura TI · Compañía Minera Meridian – El Peñón</h3>
+            <p>Infraestructura TI, ServiceNow, soporte de equipos, Ubiquiti, CCTV IP, control de acceso y cableado estructurado.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="when">2015 — 2016</div>
+          <div>
+            <h3>Practicante Técnico en Electrónica · Base Aérea Cerro Moreno, FACH</h3>
+            <p>Soporte y mantención TI, cableado estructurado e implementación de Moodle sobre XAMPP.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="wrap">
+      <h2>Contacto</h2>
+      <div class="card">
+        <p><strong>Fernando Olivares Cerda</strong></p>
+        <p>Valparaíso, Chile · <a href="mailto:fernandoolivares48@gmail.com">fernandoolivares48@gmail.com</a></p>
+        <p><a href="https://github.com/fdol212" target="_blank" rel="noopener">github.com/fdol212</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Fernando Olivares Cerda</div>
+</footer>
+</body>
+</html>
